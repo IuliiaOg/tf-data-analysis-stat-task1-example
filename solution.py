@@ -6,4 +6,5 @@ chat_id = 501141319 # Ваш chat ID, не меняйте название пе�
 
 def solution(x: np.array) -> float:
     a = x/(90**2)
-    return a.mean()
+    y = 1.96*a.std()/np.sqrt(len(a))
+    return y
